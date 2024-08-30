@@ -14,7 +14,11 @@ const SCPPage5 = () => {
             <div className="scp-description" dangerouslySetInnerHTML={{ __html: scp.Procedures }} />
             <h3>Description:</h3>
             {scp.Image && ( // Check if the image exists
-                <img src={scp.Image} alt={`${scp.Item} image`} style={{ width: '40%', height: 'auto', borderRadius: '8px' }} />
+                <img 
+                    src={scp.Image} 
+                    alt={`An illustration of ${scp.Item}, showcasing its properties and containment protocols`} // More descriptive alt text
+                    style={{ width: '40%', height: 'auto', borderRadius: '8px' }} 
+                />
             )}
             <div className="scp-description" dangerouslySetInnerHTML={{ __html: scp.Description }} />
             {scp.Additional && ( // Check if Additional information exists
