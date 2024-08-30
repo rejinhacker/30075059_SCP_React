@@ -1,4 +1,3 @@
-
 // src/components/SCP4.js
 import React from 'react';
 import scpData from '../data/scp.json'; // Ensure the path is correct
@@ -16,7 +15,11 @@ const SCPPage4 = () => {
             
             <h3>Description:</h3>
             {scp.Image && ( // Optional image display
-                <img src={scp.Image} alt={`${scp.Item} image`} style={{ width: '50%', height: 'auto', borderRadius: '8px' }} />
+                <img 
+                    src={scp.Image} 
+                    alt={`Image depicting ${scp.Item}`} // More descriptive alt text
+                    style={{ width: '50%', height: 'auto', borderRadius: '8px' }} 
+                />
             )}
             <div className="scp-description" dangerouslySetInnerHTML={{ __html: scp.Description }} />
             
