@@ -1,29 +1,31 @@
 /* App Styles */
 body {
   background-color: #eaeaea; /* Light gray background for the whole page */
-  margin:50px; /* Remove body margin to eliminate spacing issues */
+  margin:50px; /* Set margin to zero to remove the top/bottom space */
   font-family: Arial, sans-serif;
-  padding: 0; /* Correct padding */
+  padding: 0; /* Remove any default padding */
 }
 
 .App {
   display: flex;
   flex-direction: column;
-  min-height: 1000vh; /* Full height layout makes footer stay at the bottom */
+  min-height: 100vh; /* Set minimum height to fill the viewport */
 }
 
+/* Navbar */
 .navbar {
   background-color: #343a40; /* Dark background for the navbar */
   padding: 10px 20px; /* Padding for navbar */
   display: flex; /* Flexbox for navbar layout */
-  justify-content: space-between; /* Space between brand and links */
-  align-items: center; /* Center items vertically */
+  justify-content: space-between;
+  align-items: center;
 }
 
+/* Navbar styles */
 .navbar-brand {
   color: white; /* White color for brand text */
   font-size: 1.5em; /* Font size */
-  text-decoration: none; /* No underline */
+  text-decoration: none;
 }
 
 .navbar-toggler {
@@ -36,30 +38,33 @@ body {
   gap: 20px; /* Space between links */
 }
 
+/* Links styles */
 .navbar-menu li a {
   color: white; /* White links */
   text-decoration: none; /* No underline */
   padding: 8px 12px; /* Padding inside links */
-  border-radius: 4px; /* Slightly rounded corners */
 }
 
+/* Hover effect */
 .navbar-menu li a:hover {
-  background-color: rgba(255, 255, 255, 0.2); /* Feedback on hover */
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
+/* Main Content */
 .main {
   flex: 1; /* Takes remaining space */
   padding: 20px; /* Padding for main content */
   background-color: #fff; /* White background for main content */
-  border-radius: 8px; /* Slightly rounded corners */
+  border-radius: 8px; /* Rounded corners */
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
   margin: 20px; /* Margin around the main content */
 }
 
+/* Footer */
 .footer {
   background-color: #45658b; /* Dark background for the footer */
   color: white;
-  text-align: center; /* Center text in footer */
+  text-align: center;
   padding: 10px 0; /* Padding for footer */
 }
 
@@ -69,21 +74,20 @@ body {
   padding: 20px;
   background-color: #ffffff; /* White background */
   border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden; /* Prevents overflow */
 }
 
 .scp-title {
   font-size: 2em; /* Ensure title size */
   margin-bottom: 15px; /* Space below title */
-  overflow: visible; /* Ensure titles are visible */
 }
 
 .scp-description {
   font-size: 1.1em; /* Description font size */
   line-height: 1.6; /* Improved readability */
-  overflow: visible; /* Ensure description text is visible */
 }
+
 /* Responsive Styles */
 @media (max-width: 768px) {
   .navbar-menu {
@@ -139,7 +143,8 @@ body {
     font-size: 1em; /* Smaller description on mobile */
   }
 }
+
+/* Section Styles */
 .section {
   margin: 20px; /* Space above sections */
 }
-
