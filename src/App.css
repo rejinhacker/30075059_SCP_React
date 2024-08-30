@@ -1,7 +1,7 @@
 /* App Styles */
 body {
   background-color: #eaeaea; /* Light gray background for the whole page */
-  margin: 25px; /* Remove body margin to eliminate spacing issues */
+  margin: 0; /* Set body margin to 0 to avoid unwanted spacing */
   font-family: Arial, sans-serif;
   padding: 0; /* Correct padding */
 }
@@ -84,6 +84,7 @@ body {
   line-height: 1.6; /* Improved readability */
   overflow: visible; /* Ensure description text is visible */
 }
+
 /* Responsive Styles */
 @media (max-width: 768px) {
   .navbar-menu {
@@ -120,6 +121,7 @@ body {
   .main {
     margin: 10px; /* Adjust margins for mobile */
     padding: 10px; /* Less padding on small screens */
+    width: calc(100% - 20px); /* Ensure main width fits on mobile */
   }
 
   .footer {
@@ -127,19 +129,22 @@ body {
   }
 
   .scp-container {
-    margin: 15px; /* Less margin on mobile */
+    margin: 10px; /* Less margin on mobile */
     padding: 15px; /* Adjust padding */
+    width: calc(100% - 20px); /* Ensure it fits the screen */
+    box-sizing: border-box; /* Include padding and border in width */
   }
 
   .scp-title {
     font-size: 1.5em; /* Smaller title on mobile */
+    margin: 10px 0; /* Adjust margin to keep titles visible */
   }
 
   .scp-description {
     font-size: 1em; /* Smaller description on mobile */
   }
 }
+
 .section {
   margin: 20px; /* Space above sections */
 }
-
