@@ -1,0 +1,145 @@
+/* App Styles */
+body {
+  background-color: #eaeaea; /* Light gray background for the whole page */
+  margin: 25px; /* Remove body margin to eliminate spacing issues */
+  font-family: Arial, sans-serif;
+  padding: 0; /* Correct padding */
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Full height layout makes footer stay at the bottom */
+}
+
+.navbar {
+  background-color: #343a40; /* Dark background for the navbar */
+  padding: 10px 20px; /* Padding for navbar */
+  display: flex; /* Flexbox for navbar layout */
+  justify-content: space-between; /* Space between brand and links */
+  align-items: center; /* Center items vertically */
+}
+
+.navbar-brand {
+  color: white; /* White color for brand text */
+  font-size: 1.5em; /* Font size */
+  text-decoration: none; /* No underline */
+}
+
+.navbar-toggler {
+  border: none; /* Remove border from the toggler */
+}
+
+.navbar-menu {
+  list-style: none; /* No bullet points */
+  display: flex; /* Horizontal layout for links */
+  gap: 20px; /* Space between links */
+}
+
+.navbar-menu li a {
+  color: white; /* White links */
+  text-decoration: none; /* No underline */
+  padding: 8px 12px; /* Padding inside links */
+  border-radius: 4px; /* Slightly rounded corners */
+}
+
+.navbar-menu li a:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Feedback on hover */
+}
+
+.main {
+  flex: 1; /* Takes remaining space */
+  padding: 20px; /* Padding for main content */
+  background-color: #fff; /* White background for main content */
+  border-radius: 8px; /* Slightly rounded corners */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  margin: 20px; /* Margin around the main content */
+}
+
+.footer {
+  background-color: #45658b; /* Dark background for the footer */
+  color: white;
+  text-align: center; /* Center text in footer */
+  padding: 10px 0; /* Padding for footer */
+}
+
+/* Specific SCP Styles */
+.scp-container {
+  margin: 20px; /* Margin around each SCP section */
+  padding: 20px;
+  background-color: #ffffff; /* White background */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  overflow: hidden; /* Prevents overflow */
+}
+
+.scp-title {
+  font-size: 2em; /* Ensure title size */
+  margin-bottom: 15px; /* Space below title */
+  overflow: visible; /* Ensure titles are visible */
+}
+
+.scp-description {
+  font-size: 1.1em; /* Description font size */
+  line-height: 1.6; /* Improved readability */
+  overflow: visible; /* Ensure description text is visible */
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar-menu {
+    flex-direction: column; /* Stack links vertically on small screens */
+    display: none; /* Hide by default */
+    position: absolute; /* Positioning the menu */
+    top: 56px; /* Below the navbar */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+    background: #343a40; /* Background for the dropdown */
+    z-index: 1; /* Ensure the menu is on top */
+  }
+
+  .navbar-menu.active {
+    display: flex; /* Show when active */
+  }
+
+  .navbar-brand {
+    flex-grow: 1; /* Allows brand to grow */
+  }
+
+  .hamburger {
+    display: block; /* Show hamburger icon on small screens */
+    color: white; /* Hamburger color */
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .navbar-menu li {
+    padding: 10px; /* Add padding for menu items */
+    text-align: center; /* Center text */
+  }
+
+  .main {
+    margin: 10px; /* Adjust margins for mobile */
+    padding: 10px; /* Less padding on small screens */
+  }
+
+  .footer {
+    padding: 5px 0; /* Reduced padding on footer for mobile */
+  }
+
+  .scp-container {
+    margin: 15px; /* Less margin on mobile */
+    padding: 15px; /* Adjust padding */
+  }
+
+  .scp-title {
+    font-size: 1.5em; /* Smaller title on mobile */
+  }
+
+  .scp-description {
+    font-size: 1em; /* Smaller description on mobile */
+  }
+}
+.section {
+  margin: 20px; /* Space above sections */
+}
+

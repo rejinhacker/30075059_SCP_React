@@ -1,0 +1,41 @@
+/* Home.css */
+
+/* Container for the main landing page */
+.container-fluid {
+    background-color: #f8f9fa; /* Light background */
+}
+
+/* Jumbotron Styles */
+.jumbotron {
+    background-color: #e49696; /* Slightly darker background for jumbotron */
+    border-radius: 10px; /* Rounded corners */
+    padding: 2rem 1rem; /* Padding for the jumbotron */
+}
+
+.display-4 {
+    color: #d77272; /* Dark text for visibility */
+}
+
+.lead {
+    color: #ad0d0d; /* Darker grey for secondary text */
+}
+
+/* Section Styles */
+.section {
+    padding: 10px 0; /* Padding for each section */
+}
+
+.section h2 {
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+.section p {
+    font-size: 1.1em; /* Slightly larger font for better readability */
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .jumbotron {
+        padding: 1rem; /* Adjust padding for smaller screens */
+    }
+}
