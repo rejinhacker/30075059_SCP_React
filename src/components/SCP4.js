@@ -17,7 +17,7 @@ const SCPPage4 = () => {
             {scp.Image && ( // Optional image display
                 <img 
                     src={scp.Image} 
-                    alt={`Image depicting ${scp.Item}`} // More descriptive alt text
+                    alt={`An illustration of ${scp.Item}`} // More meaningful alt text
                     style={{ width: '50%', height: 'auto', borderRadius: '8px' }} 
                 />
             )}
