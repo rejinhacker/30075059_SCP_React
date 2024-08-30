@@ -10,7 +10,11 @@ const SCP3 = () => {
             <h1 className="scp-title">{scp.Item}</h1>
             <h2>Object Class: {scp.Object}</h2>
             {scp.Image && ( // Check if the image is not null or undefined
-                <img src={scp.Image} alt={`${scp.Item} image`} style={{ width: '100%', height: 'auto', borderRadius: '8px' }} />
+                <img 
+                    src={scp.Image} 
+                    alt={`An illustration of ${scp.Item}, detailing its characteristics and containment procedures`} // More descriptive alt text
+                    style={{ width: '100%', height: 'auto', borderRadius: '8px' }} 
+                />
             )}
             <h3>Special Containment Procedures:</h3>
             <div className="scp-description" dangerouslySetInnerHTML={{ __html: scp.Procedures }} />
