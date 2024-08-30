@@ -15,17 +15,28 @@ const SCPPage4 = () => {
             
             <h3>Description:</h3>
             {scp.Image && ( // Optional image display
-                <img 
-                    src={scp.Image} 
-                    alt={`An illustration of ${scp.Item}, showing its unique characteristics and containment protocols`} // More descriptive alt text
-                    style={{ width: '50%', height: 'auto', borderRadius: '8px' }} 
-                />
+                <img src={scp.Image} alt={`${scp.Item} image`} style={{ width: '50%', height: 'auto', borderRadius: '8px' }} />
             )}
             <div className="scp-description" dangerouslySetInnerHTML={{ __html: scp.Description }} />
+            
             {scp.Reference && ( // Check if the reference is present
                 <>
                     <h3>Reference:</h3>
                     <div className="scp-description" dangerouslySetInnerHTML={{ __html: scp.Reference }} />
+                </>
+            )}
+
+            {scp.Chronological && ( // Check if chronological information is present
+                <>
+                    <h3>Chronological Events:</h3>
+                    <div className="scp-description" dangerouslySetInnerHTML={{ __html: scp.Chronological }} />
+                </>
+            )}
+            
+            {scp.Additional && ( // Check if additional information is present
+                <>
+                    <h3>Additional Information:</h3>
+                    <div className="scp-description" dangerouslySetInnerHTML={{ __html: scp.Additional }} />
                 </>
             )}
         </div>
